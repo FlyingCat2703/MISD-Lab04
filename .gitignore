@@ -3,6 +3,14 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# appsettings dotnet
+TaskApi/appsettings.*.json
+TaskApi/appsettings.json
+
+# .env
+task-client/.env
+task-client/node_modules
+
 # User-specific files
 *.rsuser
 *.suo
