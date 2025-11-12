@@ -1,0 +1,61 @@
+.board {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--color-bg);
+}
+
+.column {
+    flex: 1;
+    min-width: 250;
+    background: var(--color-surface);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+.column-title {
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.pending {
+    background-color: var(--color-pending);
+}
+
+.inprogress {
+    background-color: var(--color-inprogress);
+}
+
+.completed {
+    background-color: var(--color-completed);
+}
+
+.cancelled {
+    background-color: var(--color-cancelled);
+}
+
+.task-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task-card {
+    background: var(--color-white);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-xs);
+    border-left: 2px solid var(--color-border);
+    transition: transform 0.2s;
+}
+
+.task-card:hover {
+    transform: translateY(-3px);
+}

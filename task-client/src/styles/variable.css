@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #2563eb;
+  --color-white: #ffffff;
+  --color-gray-50: #f9fafb;
+  --color-gray-200: #e5e7eb;
+  --color-gray-500: #6b7280;
+  --color-pending: #ffb020;
+  --color-inprogress: #007bff;
+  --color-completed: #22bb33;
+  --color-cancelled: #cc0000;
+  --color-border: #ddd;
+  --color-bg: #f4f6f8;
+  --color-surface: #ffffff;
+
+  --font-family: "Segoe UI", sans-serif;
+
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 40px;
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
