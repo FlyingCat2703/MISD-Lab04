@@ -16,7 +16,8 @@ namespace TaskApi.Repositories.Implementations
 
         public IQueryable<TaskModel> GetAll()
         {
-            return _dbContext.Task.AsNoTracking();
+            return _dbContext.Task
+                .AsNoTracking();
         }
 
         public async Task<TaskModel?> GetByIdAsync(int id)

@@ -33,7 +33,7 @@ builder.Services.AddDbContext<DBContext>(options =>
 );
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.WebHost.UseUrls("http://localhost:5010", "https://localhost:5011");
+builder.WebHost.UseUrls("https://localhost:5011");
 
 var app = builder.Build();
 

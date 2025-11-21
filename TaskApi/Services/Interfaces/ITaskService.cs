@@ -13,8 +13,8 @@ namespace TaskApi.Services.Interfaces
         Task<TaskDTO?> GetByIdAsync(int id);
         Task CreateTaskAsync(CreateTaskDTO task);
         Task UpdateTask(UpdateTaskDTO task);
-        Task DeleteTask(TaskDTO task);
-        Task<IEnumerable<TaskDTO>?> Search(string keyword, int page, int name);
-        Task<IEnumerable<TaskDTO>?> Filter(string? keyword, TaskStatus? status, Priority? priority, int page = 1, int size = 10);
+        Task DeleteTask(int id);
+        Task<TaskApi.Models.Entities.PagedResult<TaskDTO>?> Search(string keyword, int page, int name);
+        Task<TaskApi.Models.Entities.PagedResult<TaskDTO>?> Filter(string? keyword, TaskStatus? status, Priority? priority, DateTime? startDate, DateTime? endDate, int page, int size);
     }
 }
